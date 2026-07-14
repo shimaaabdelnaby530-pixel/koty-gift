@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>هدية لك يا كوتي 🤍</title>
+
+<style>
+
+body{
+margin:0;
+background:linear-gradient(#ffd6e7,#ffc1da);
+font-family:Tahoma;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:25px;
+text-align:center;
+width:320px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+h2{
+color:#d63384;
+}
+
+input{
+width:90%;
+padding:15px;
+border-radius:15px;
+border:none;
+background:#f5f5f5;
+font-size:18px;
+margin-top:15px;
+}
+
+button{
+margin-top:20px;
+width:100%;
+padding:15px;
+background:#d63384;
+color:white;
+border:none;
+border-radius:15px;
+font-size:18px;
+cursor:pointer;
+}
+
+img{
+width:170px;
+margin:20px 0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>💌 هدية لك يا كوتي</h2>
+
+<p>اكتب كلمة السر لفتح الظرف 🤍</p>
+
+<img src="https://cdn-icons-png.flaticon.com/512/561/561127.png">
+
+<input id="pass" placeholder="كلمة السر">
+
+<button onclick="openGift()">افتح الظرف</button>
+
+</div>
+
+<script>
+
+function openGift(){
+
+let x=document.getElementById("pass").value;
+
+if(x=="love"){
+
+window.location.href="gift.html";
+
+}else{
+
+alert("كلمة السر غير صحيحة 🤍");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
